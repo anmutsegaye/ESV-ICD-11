@@ -507,3 +507,10 @@ body.dark-mode{
 .fav-btn:hover{
     transform:scale(1.05);
 }
+.highlight{
+    background:#dbeafe;
+    color:#2563eb;
+    font-weight:bold;
+    padding:2px 4px;
+    border-radius:4px;
+}
