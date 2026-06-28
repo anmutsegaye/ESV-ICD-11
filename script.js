@@ -113,8 +113,14 @@ function displayResults(data) {
 
 </div>
 
-            </div>
-
+            </div>       
+document.addEventListener('click',e=>{
+  const menu=document.getElementById('mobMenu');
+  const btn=document.getElementById('menuBtn');
+  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!btn.contains(e.target)){
+    menu.classList.remove('open');
+  }
+});
             <div class="disease">
                 ${highlightText(item.category, keyword)}
             </div>
