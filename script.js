@@ -114,13 +114,7 @@ function displayResults(data) {
 </div>
 
             </div>       
-document.addEventListener('click',e=>{
-  const menu=document.getElementById('menuToggle');
-  const btn=document.getElementById('menu');
-  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!btn.contains(e.target)){
-    menu.classList.remove('open');
-  }
-});
+
             <div class="disease">
                 ${highlightText(item.category, keyword)}
             </div>
@@ -441,5 +435,12 @@ function showSection(sectionId, clickedItem){
 // ======================
 // INITIALIZE
 // ======================
+document.addEventListener('click',e=>{
+  const menu=document.getElementById('menuToggle');
+  const btn=document.getElementById('menu');
+  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!btn.contains(e.target)){
+    menu.classList.remove('open');
+  }
+});
 
 loadData();
